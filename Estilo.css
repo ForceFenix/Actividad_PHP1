@@ -1,0 +1,231 @@
+@charset "utf-8";
+*{
+    font-style: normal ;
+    
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0px;
+
+}
+body{
+    background-color:lightgrey;
+}
+/*----------------------------------------------------------------------------------------------------*/
+header{
+    text-align: center;
+    padding-top: 80px;
+    height: 50px;
+    color: rgb(0, 80, 155);
+}
+aside{
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 70px;
+    font-size: 15px;
+    color: white;
+    background-color:  rgb(0, 80, 155);
+    border-radius: 40px;
+    box-shadow:2px 2px 10px grey;
+}
+.conteiner{
+    height: 100hv;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+.logo{
+    position: absolute;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.gatito{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    left: 1000px;
+    position: static;
+}
+/*----------------------------------------------------------------------------------------------------*/
+h1{
+    background: linear-gradient(90deg, rgba(21,142,167,1) 0%, rgba(28,97,147,1) 54%, rgba(15,50,77,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu_principal{
+    width: 100%;
+    position: fixed;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu_principal ul{/*todo el ancho del menu*/
+    list-style: none;
+    margin-left: 0px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    height: 50px;
+    line-height: 50px;
+    background-color: lightgrey;
+    border-bottom-right-radius: 40px;
+    box-shadow:2px 2px 10px grey;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu_principal ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu_principal ul li a {/*el boton Home*/
+    background: linear-gradient(90deg, rgba(15,50,77,1) 0%, rgba(28,97,147,1) 56%, rgba(21,142,167,1) 100%);
+    font-weight: 500;
+    color: lightgrey;
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu_principal ul li a:hover{ /*El boton Home cuando tiene el mouse encima */
+    background-color: lightgrey;
+    background: linear-gradient(90deg, rgba(21,142,167,1) 0%, rgba(28,97,147,1) 54%, rgba(15,50,77,1) 100%);
+    border-radius: 40px;
+    transition: all 500ms cubic-bezier(0.980, 0.300, 0.380, 0.655); /* custom */
+    transition-timing-function: cubic-bezier(0.980, 0.300, 0.380, 0.655);
+}
+/*----------------------------------------------------------------------------------------------------*/
+.clear{ /*Espacio para limpiar*/
+    height: 80px;
+    clear: both;
+}
+
+/*---------------------------menu navegacion pagina 2---------------------------*/
+/*---------------------------menu navegacion pagina 2---------------------------*/
+/*---------------------------menu navegacion pagina 2---------------------------*/
+/*---------------------------menu navegacion pagina 2---------------------------*/
+/*---------------------------menu navegacion pagina 2---------------------------*/
+
+.navegacion{ /*Raiz <nav> de los axies*/
+    width: 100%;
+    background:lightgrey ;
+    display: flex;
+    justify-content: center;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu{ /*<ul> de los axies*/
+    width: 1000px;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    background: lightgrey;
+    list-style: none;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li{/*cada uno de los axies*/
+    flex-basis: 0;
+    flex-grow: 1;
+    border-right: solid lightgrey;
+    position: relative;
+    border-radius: 40px;
+    box-shadow:2px 2px 10px grey;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li axies{
+   display: flex;
+   flex-direction: column; 
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu .imagenteam{/*fotos de axies*/
+    position: absolute;
+    width: 25% ;
+    height: 100%;
+    left: 25px;
+    z-index: 20;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li:active .imagenteam{/*accion al pasar el mouse arriba de las fotos*/
+    height: 300%;
+    width: 100%;
+    left: 0px;
+    padding-bottom: 15px;
+    transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+    transition: to right;
+    border-radius: 40px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li axie .team{/*texto en el menu*/
+    width: 90%;
+    height: 100%;
+    left: -10px;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    position: absolute;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 50px;
+    background: linear-gradient(90deg, rgba(21,142,167,1) 0%, rgba(28,97,147,1) 54%, rgba(15,50,77,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li:hover axie .team{/*texto en el menu al pasar el mouse*/
+    width: 90%;
+    height: 100%;
+    left: -10px;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    position: absolute;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 50px;
+    background: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li:active axie .team{/*texto en el menu al pasar el mouse*/
+    width: 0%;
+    height: 0%;   
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li axie .down-item{/*bajada al pasar el mouse estado de reposo*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background: white;
+    transition: .4s ease;
+    -webkit-transition:  .4s ease;
+    -o-transition:  .4s ease;
+    border-radius: 40px;
+}
+    /*----------------------------------------------------------------------------------------------------*/
+.menu li:hover .down-item{/*bajada al pasar el mouse estado activo*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background-image: "none";
+    background: linear-gradient(90deg, rgba(15,50,77,1) 0%, rgba(28,97,147,1) 56%, rgba(21,142,167,1) 100%);
+    box-shadow:2px 2px 10px rgb(0, 80, 155); 
+}
+/*----------------------------------------------------------------------------------------------------*/
+.menu li:active .down-item{/*bajada al pasar el mouse estado activo*/
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    border-bottom: 300px;
+    top: 0%;
+    left: 0px;
+    background: linear-gradient(90deg, rgba(15,50,77,1) 0%, rgba(28,97,147,1) 56%, rgba(21,142,167,1) 100%);
+    box-shadow:2px 2px 10px rgb(0, 80, 155); 
+    transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+    transition: to right;
+}
+/*----------------------------------------------------------------------------------------------------*/
